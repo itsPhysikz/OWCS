@@ -1,0 +1,234 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #222222; /* Dark gray background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+header {
+    background-color: #1a1a1a; /* Darker gray header */
+    color: #f99c0c; /* Orange text */
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: auto; /* Adjust as needed */
+    max-height: 1.5em; /* Maintain aspect ratio */
+    margin-right: 5px; /* Add space between image and team name */
+    margin-left: 5px; /* Add space between image and text */
+    vertical-align: bottom;
+}
+
+footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.75em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f99c0c; /* Orange links */
+}
+
+a {
+    color: #f99c0c; /* Orange links */
+}
+
+main {
+    padding: 20px;
+}
+
+.group {
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff; /* White text */
+}
+
+.bracket {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.upper-bracket, .lower-bracket, .grand-final {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.match {
+    margin: 5px 0;
+    background-color: #333333; /* Dark gray match box */
+    border: 1px solid #555555; /* Dark border */
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 25vw; /* Set a minimum width for the text boxes */
+    text-align: center;
+}
+
+.match a {
+    color: #f99c0c; /* Orange links */
+}
+
+.match b, .match u {
+    color: #ffffff; /* White bold and underlined text */
+}
+
+.group-standings {
+    background-color: #333333; /* Dark gray background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.scoreboard-header {
+    background-color: #1a1a1a; /* Darker gray header */
+}
+
+.scoreboard-header th {
+    padding: 10px;
+}
+
+.scoreboard-header th:first-child {
+    border-top-left-radius: 5px;
+}
+
+.scoreboard-header th:last-child {
+    border-top-right-radius: 5px;
+}
+
+.scoreboard-header th {
+    color: #f99c0c; /* Orange text */
+}
+
+.group-standings td {
+    padding: 10px;
+    text-align: center;
+}
+
+.qualified {
+    background-color: #4caf4fc2; /* Green background for qualified teams */
+}
+
+.eliminated {
+    background-color: #ff5833be; /* Red background for eliminated teams */
+}
+
+/* Add this CSS to style.css */
+.group-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+    gap: 20px; /* Gap between columns */
+}
+
+.team {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.team h3 {
+    margin: 0;
+}
+
+.team-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.team-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.team-links li:last-child {
+    margin-right: 0;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.team h3 {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.team img {
+    max-height: 40px; /* Limiting the maximum height of the image */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.team-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.team-links li:last-child {
+    margin-right: 0;
+}
+
+.team {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.team h3 {
+    margin: 0;
+    margin-left: 5px; /* Add left margin to create space */
+    margin-right: 20px;
+}
+
+.team img {
+    margin-right: 5px; /* Add right margin to create space */
+}
+
+.match img {
+    width: auto; /* Adjust as needed */
+    max-height: 1em; /* Maintain aspect ratio */
+    margin-right: 5px; /* Add space between image and team name */
+    margin-left: 5px; /* Add space between image and text */
+    vertical-align: center;
+}
+
+.group-standings img {
+    width: auto; /* Adjust as needed */
+    max-height: 1em; /* Maintain aspect ratio */
+    margin-right: 5px; /* Add space between image and team name */
+    margin-left: 10px; /* Add space between image and text */
+    vertical-align: center;
+}
