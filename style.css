@@ -232,3 +232,9 @@ table {
     margin-left: 10px; /* Add space between image and text */
     vertical-align: center;
 }
+
+.warning {
+    font-size: 0.75em; /* Adjust the font size as needed */
+    color: #ff8c00; /* dark orange text color */
+    text-align: center;
+}
