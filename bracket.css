@@ -166,7 +166,7 @@ header img {
 
 .champion li,
 .round li {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     box-shadow: none;
     opacity: 0.65;
 }
@@ -183,6 +183,12 @@ header img {
     background-color: #fff;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     opacity: 1;
+}
+
+.current li.team-loser {
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.60;
 }
 
 .vote-options {
