@@ -130,13 +130,24 @@
         </section>
 
         <section id="stream">
-            <iframe
-                src="https://player.twitch.tv/?channel=ow_esports&parent=www.itsphysikz.github.io/OWCS/&parent=itsphysikz.github.io/OWCS/&muted=true"
-                height="720"
-                width="1280"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
+            <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
+
+            <!-- Load the Twitch embed JavaScript file -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+            <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+                width: 1280,
+                height: 720,
+                layout: "video",
+                channel: "ow_esports",
+                muted: true,
+                // Only needed if this page is going to be embedded on other websites
+                parent: ["physikz.xyz"]
+            });
+            </script>
         </section>
 
         <section id="twitter-feed">
