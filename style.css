@@ -153,6 +153,12 @@ table {
     text-align: center;
 }
 
+.neutral {
+    background-color: #ccccccbe;
+    border: 2px solid #292929;
+    /* Grey background for teams */
+}
+
 .qualified {
     background-color: #4caf4fc2;
     /* Green background for qualified teams */
