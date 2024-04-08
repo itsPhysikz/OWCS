@@ -154,8 +154,9 @@ table {
 }
 
 .neutral {
-    background-color: #ccccccbe;
+    background-color: #ffffffd7;
     border: 2px solid #292929;
+    color: black;
     /* Grey background for teams */
 }
 
