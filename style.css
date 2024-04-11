@@ -383,3 +383,15 @@ table {
 .dropdown .dropdown-content a {
     margin-right: 0;
 }
+
+.matchhome img{
+    width: auto;
+    /* Adjust as needed */
+    max-height: 1em;
+    /* Maintain aspect ratio */
+    margin-right: 0px;
+    /* Add space between image and team name */
+    margin-left: 5px;
+    /* Add space between image and text */
+    vertical-align: center;
+}
