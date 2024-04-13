@@ -162,12 +162,18 @@ table {
 }
 
 .qualified {
-    background-color: #4caf4fc2;
+    background-color: #79c57cc2;
+    border: 2px solid #292929;
+    color: black;
+    min-width: 150px;
     /* Green background for qualified teams */
 }
 
 .eliminated {
     background-color: #ff5833be;
+    border: 2px solid #292929;
+    color: black;
+    min-width: 150px;
     /* Red background for eliminated teams */
 }
 
