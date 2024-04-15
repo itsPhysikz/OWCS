@@ -8,6 +8,7 @@
 /* Body styles */
 body {
     font-family: 'Arial', sans-serif;
+    font-size: 62.5%;
     background-color: #222222;
     color: #ffffff;
 }
@@ -18,7 +19,7 @@ body {
     padding: 15px;
     display: flex;
     align-items: center;
-    font-size: 22px;
+    font-size: 1.145vw;
     font-family: 'Roboto Condensed', sans-serif;
     font-variant-caps: all-small-caps;
 }
@@ -57,6 +58,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin: 20px;
+    max-height: 65vh;
 }
 
 /* Filter section styles */
@@ -75,7 +77,7 @@ body {
 
 .filter h2 {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 0.9375vw;
     font-weight: bold;
 }
 
@@ -93,7 +95,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     font-variant-caps: all-small-caps;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.302vw;
 }
 
 /* Matches section styles */
@@ -101,7 +103,6 @@ body {
     width: 65%;
     display: flex;
     flex-wrap: wrap;
-    max-height: 600px; /* Set the maximum height for the matches section */
     overflow-y: auto; /* Enable vertical scrolling */
     margin-right: 12.5%;
 }
@@ -121,7 +122,7 @@ body {
 
 .date-time {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 0.833vw;
     margin-bottom: 10px;
     vertical-align: middle;
     text-align: center;
@@ -131,7 +132,7 @@ body {
 
 .match-time {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 0.833vw;
     margin-bottom: 10px;
     vertical-align: middle;
     text-align: center;
@@ -150,7 +151,7 @@ body {
     margin-top: 10px;
     font-family: 'Roboto Condensed', sans-serif;
     font-variant-caps: all-small-caps;
-    font-size: 40px;
+    font-size: 2.083vw;
 }
 
 .teams .team-a {
@@ -173,11 +174,11 @@ body {
     margin: 0 15px; /* Adjust the margin as needed */
     font-family: 'Roboto Condensed', sans-serif;
     font-variant-caps: normal;
-    font-size: 20px;
+    font-size: 1.0416vw;
 }
 
 .details {
-    font-size: 14px;
+    font-size: 0.729vw;
     font-style: italic;
     color: #777;
     margin-bottom: -10px;
@@ -230,9 +231,10 @@ body {
 }
 
 /* CSS for desktop */
-@media (min-width: 768px) {
-    .banner-mobile {
-        display: none; /* hide mobile banner */
+@media (min-width: 1921px) {
+    .container{
+        width: 100%;
+        max-height: 70vh;
     }
 }
 
@@ -244,6 +246,7 @@ body {
 
     .container {
         width: 100%;
+        max-height: 85vh;
         margin: 0px;
         flex-direction: column;
     }
@@ -265,7 +268,6 @@ body {
     .matches-section {
         width: 100%;
         margin-right: 0;
-        max-height: 65vh;
         overflow-x: hidden;
         overflow-y: auto;
     }
