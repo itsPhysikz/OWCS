@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+    <title>Schedule</title>
+    <link rel="stylesheet" href="schedule.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/favicon.png" alt="Overwatch OWCS Logo">
+        </div>
+        <div class="nav-links">
+            <a href="./">Home</a>
+            <a href="./schedule">Schedule</a>
+  
+            <div class="dropdown">
+                <a>Standings</a>
+                <div class="dropdown-content">
+                    <a href="./NA">NA</a>
+                    <a href="./EMEA">EMEA</a>
+                    <a href="./Asia">Asia</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Image -->
+    <div class="banner">
+        <img src="images/OWBANNERthin.jpg" alt="Banner Image">
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <div class="filter">
+                <h2>Filter by Region:</h2>
+                <button class="filter-btn" data-region="all">All</button>
+                <button class="filter-btn" data-region="na">NA</button>
+                <button class="filter-btn" data-region="emea">EMEA</button>
+                <button class="filter-btn" data-region="asia">Asia</button>
+                <!-- Add more filter buttons as needed -->
+            </div>
+        </div>
+
+        <!-- Matches Section -->
+        <div class="matches-section">
+
+            <!-- Match 1 -->
+
+            <div class="match" data-region="emea">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>Rocstars</p>
+                        </div>
+                        <img src="images/default_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/flexodiax_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>Flexodiax</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-20T16:00:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match </p>
+                </div>
+            </div>
+
+            <div class="match" data-region="emea">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>AWW YEAH</p>
+                        </div>
+                        <img src="images/AWW_YEAH_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/metaboiz_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>Metaboiz</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-20T17:30:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="emea">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>Ex Oblivione</p>
+                        </div>
+                        <img src="images/ex_oblivione_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/supershy_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>Supershy</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-20T19:00:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="na">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>UNC INC</p>
+                        </div>
+                        <img src="images/default_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/shikigami_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>Shikigami</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-20T21:00:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="na">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>Vice</p>
+                        </div>
+                        <img src="images/vice_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/nightmare_rotation_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>Nightmare Rotation</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-20T22:30:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="na">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>DhillDucks</p>
+                        </div>
+                        <img src="images/dhillducks_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/who_is_goldfish_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>Who Is Goldfish</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-20T24:00:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="emea">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>Team Peps</p>
+                        </div>
+                        <img src="images/team_peps_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/AOMA_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>A One Man Army</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-21T16:00:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="emea">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>Deimpero</p>
+                        </div>
+                        <img src="images/deimpero_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/default_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>TBD(FLEX/ROCS)</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-21T17:30:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="emea">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>Ataraxia</p>
+                        </div>
+                        <img src="images/ataraxia_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/default_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>TBD(AY/MTB)</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-21T19:00:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="na">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>Timeless</p>
+                        </div>
+                        <img src="images/timeless_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/citrus_nation_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>Citrus Nation</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-21T21:00:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="na">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>Pirates in Pyjamas</p>
+                        </div>
+                        <img src="images/pirates_in_pyjamas_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/default_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>TBD(SHI/UNC)</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-21T22:30:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="na">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>FMCL</p>
+                        </div>
+                        <img src="images/FMCL_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/default_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>TBD(VICE/NR)</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-21T24:00:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Elimination Match</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="asia">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>Team Falcons</p>
+                        </div>
+                        <img src="images/team_falcons_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/daf_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>DAF</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-25T06:00:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Main Event Round 1</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="asia">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>VARREL</p>
+                        </div>
+                        <img src="images/varrel_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/yeti_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>YETI</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-25T07:30:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Main Event Round 1</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="asia">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>From The Gamer</p>
+                        </div>
+                        <img src="images/from_the_gamer_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/honeypot_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>Honeypot</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-25T09:00:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Main Event Round 1</p>
+                </div>
+            </div>
+
+            <div class="match" data-region="asia">
+                <div class="match-info">
+                    <div class="teams">
+                        <div class="team-a">
+                            <p>Insomnia</p>
+                        </div>
+                        <img src="images/insomnia_logo.png" alt="Team 1 Logo">
+                        <div class="vs">vs</div>
+                        <img src="images/crazy_raccoon_logo.png" alt="Team 2 Logo">
+                        <div class="team-b">
+                            <p>Crazy Raccoon</p>
+                        </div>
+                    </div>
+                    <div class="match-time" data-utc="2024-04-25T10:30:00Z"></div> <!-- Match Time -->
+                    <p class="details">Bo5 Main Event Round 1</p>
+                </div>
+            </div>
+
+            <!-- Add more match divs as needed -->
+
+        </div>
+    </div>
+
+    <script src="scheduleTimes.js"></script>
+    <script src="scheduleFilters.js"></script>
+</body>
+
+</html>
