@@ -9,22 +9,27 @@
 
 <url>
   <loc>https://owcs.xyz/</loc>
-  <lastmod>2024-04-11T06:14:10+00:00</lastmod>
+  <lastmod>2024-04-15T08:42:11+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://owcs.xyz/schedule</loc>
+  <lastmod>2024-04-15T08:42:11+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
   <loc>https://owcs.xyz/NA</loc>
-  <lastmod>2024-04-11T06:14:10+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2024-04-15T08:42:11+00:00</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://owcs.xyz/EMEA</loc>
-  <lastmod>2024-04-11T06:14:10+00:00</lastmod>
+  <lastmod>2024-04-15T08:42:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://owcs.xyz/asia</loc>
-  <lastmod>2024-04-11T06:14:10+00:00</lastmod>
+  <lastmod>2024-04-15T08:42:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
