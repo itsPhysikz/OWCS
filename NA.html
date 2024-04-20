@@ -20,11 +20,29 @@
     <link rel="icon" href="images/favicon.png">
     <style>
         /* CSS for desktop */
+        @media (min-width: 1921px){
+            .group{
+                font-size: 1vw;
+            }
+        }
 
         /* CSS for mobile */
         @media (max-width: 767px) {
+
+            .navbar{
+                font-size: 6vw;
+                justify-content: center;
+            }
+
+            .navbar .logo img {
+                height: 3rem;
+                margin-right: 20px;
+            }
+
             .group {
-                margin-bottom: 20px; /* Add some space between groups */
+                margin-bottom: 50px; /* Add some space between groups */
+                font-size: 4.5vw;
+                width: 100%;
             }
 
             .bracket {
@@ -43,6 +61,7 @@
 
             .group-standings {
                 margin-top: 20px; /* Add some space above group standings */
+                max-width: 100%;
             }
 
             .group-standings table {
@@ -53,11 +72,15 @@
             .group-standings table td {
                 padding: 5px; /* Adjust table cell padding */
                 text-align: center;
-                max-width: 50px;
+                max-width: 30px;
                 overflow: hidden;
                 text-overflow:clip;
                 white-space: nowrap;
                 word-wrap: break-word;
+            }
+
+            .group-standings table td:first-child{
+                text-align: left;
             }
 
             .group-standings table th {
@@ -65,10 +88,18 @@
                 color: #fff;
             }
 
+            .group-standings img {
+                margin-left: 0px;
+            }
+
             .neutral,
             .qualified,
             .eliminated {
-                min-width: 50px;
+                min-width: 80px;
+            }
+
+            footer{
+                font-size: 3vw;
             }
 
         }

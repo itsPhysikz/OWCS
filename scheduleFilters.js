@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const filterButtons = document.querySelectorAll(".filter-btn");
     const matches = document.querySelectorAll(".match");
 
+    // Get the current time
+    var currentTime = new Date();
+
     filterButtons.forEach(button => {
         button.addEventListener("click", function() {
             const selectedRegions = [];
@@ -22,7 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
             // Show matches belonging to the selected regions and hide others
             matches.forEach(match => {
                 const matchRegion = match.getAttribute("data-region");
-                if (selectedRegions.includes("all") || selectedRegions.includes(matchRegion)) {
+                const matchTimeElement = match.querySelector('.match-time');
+                const utcTimeString = matchTimeElement.getAttribute('data-utc');
+                const utcDate = new Date(utcTimeString);
+                const matchTimePlusOneHour = new Date(utcDate.getTime() + 60 * 60 * 1000);
+
+                // Check if the current time is more than an hour past the match time
+                if ((selectedRegions.includes("all") || selectedRegions.includes(matchRegion)) && currentTime <= matchTimePlusOneHour) {
                     match.style.display = "block";
                 } else {
                     match.style.display = "none";

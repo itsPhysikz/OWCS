@@ -29,7 +29,7 @@
             padding-right: 20px;
             margin-bottom: 10px;
             min-width: 55%;
-            font-size: 0.9em;
+            font-size: 0.9rem;
             text-align: center;
         }
 
@@ -54,14 +54,46 @@
 
         /* CSS for mobile */
         @media (max-width: 767px) {
+
+            body{
+                width: 100%;
+            }
+
+            .container{
+                padding: 0;
+                width: 100%;
+                justify-content: center;
+            }
+            main{
+                padding: 0;
+            }
             #stream {
                 display: none; /* Hide the Twitch embed on mobile */
+                margin: 0;
+                padding: 0;
             }
             #upcoming-matches{
-                margin-left: 10%;
+                margin: 0;
+                font-size: 0.6rem;
             }
             #twitter-feed{
                 display: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar{
+                font-size: 6vw;
+                justify-content: center;
+            }
+
+            .navbar .logo img {
+                height: 3rem;
+                margin-right: 20px;
+            }
+
+            footer{
+                font-size: 3vw;
             }
         }
 
