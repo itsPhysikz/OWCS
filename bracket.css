@@ -52,9 +52,9 @@ body {
     flex-direction: row;
     -webkit-align-self: center;
     align-self: center;
-    margin-top: -7.5rem;
     text-align: center;
-    padding: 14.375rem 0\9;
+    padding: 0;
+    margin-top: 0;
 }
 
 .champion i {
@@ -181,6 +181,7 @@ body {
 
 .final {
     margin: 4.5em 0;
+    margin-top: 0;
 }
 
 .date {
@@ -300,7 +301,7 @@ a {
 
 .bracket-title{
     margin-top: -30px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.6875rem;
     color: #f96b0c;
@@ -308,7 +309,21 @@ a {
     font-variant: all-small-caps;
 }
 
-/* For screens larger than 1440px */
+.groups-link{
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1rem;
+    color: #513068;
+    text-align: center;
+    font-variant: all-small-caps;
+}
+
+.groups-link a{
+    color: #a5673e;
+}
+
+/* For screens larger than 1440p */
 @media screen and (min-width: 2560px) and (max-width:3839px) {
     body {
         font-size: 62.5%; /* Adjust the base font size as needed */
@@ -317,6 +332,10 @@ a {
     .bracket-title{
         font-size: 2.8rem;
     }
+
+    .bracket-title{
+        font-size: 1.5rem;
+    }
   
     .container {
       max-width: 95%; /* Adjust the maximum width of the container */
@@ -324,9 +343,12 @@ a {
   
     .matchup,
     .round-details,
-    .date,
     .navbar {
       font-size: 1.6rem; /* Adjust the font size for matchups, round details, and dates */
+    }
+
+    .date{
+        font-size: 1.4rem; /* Adjust the font size for matchups, round details, and dates */
     }
     
     .share-wrap{
@@ -365,7 +387,7 @@ a {
     }
   }
   
-  /* For screens larger than 2160px (4K) */
+  /* For screens larger than 2160p (4K) */
   @media screen and (min-width: 3840px) {
     body {
         font-size: 62.5%; /* Adjust the base font size as needed */
@@ -374,6 +396,10 @@ a {
     .bracket-title{
         font-size: 3.4rem;
     }
+
+    .groups-link{
+        font-size: 1.9rem;
+    }
   
     .container {
       max-width: 95%; /* Adjust the maximum width of the container */
@@ -381,9 +407,12 @@ a {
   
     .matchup,
     .round-details,
-    .date,
     .navbar {
       font-size: 2.2rem; /* Adjust the font size for matchups, round details, and dates */
+    }
+
+    .date{
+        font-size: 2rem; /* Adjust the font size for matchups, round details, and dates */
     }
     
     .share-wrap{
