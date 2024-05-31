@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const matchTimeElement = match.querySelector('.match-time');
                 const utcTimeString = matchTimeElement.getAttribute('data-utc');
                 const utcDate = new Date(utcTimeString);
-                const matchTimePlusOneHour = new Date(utcDate.getTime() + 60 * 60 * 1000);
+                const matchTimePlusOneHour = new Date(utcDate.getTime() + 60 * 120 * 1000); //set to 2 hours
 
                 // Check if the current time is more than an hour past the match time
-                if ((selectedRegions.includes("all") || selectedRegions.includes(matchRegion)) && currentTime <= matchTimePlusOneHour) {
+                if ((selectedRegions.includes("all") || matchRegion.includes("all") || selectedRegions.includes(matchRegion)) && currentTime <= matchTimePlusOneHour) {
                     match.style.display = "block";
                 } else {
                     match.style.display = "none";
