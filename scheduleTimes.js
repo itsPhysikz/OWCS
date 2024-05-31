@@ -16,7 +16,7 @@ matches.forEach(function(match) {
     var utcDate = new Date(utcTimeString);
 
     // Add one hour to the match time
-    var matchTimePlusOneHour = new Date(utcDate.getTime() + 60 * 120 * 1000); //set to 2 hours for now
+    var matchTimePlusOneHour = new Date(utcDate.getTime() + 60 * 240 * 1000); //set to 4 hours for now
 
     // Check if the current time is more than an hour past the match time
     if (currentTime > matchTimePlusOneHour) {
