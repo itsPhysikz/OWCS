@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const matchTimeElement = match.querySelector('.match-time');
                 const utcTimeString = matchTimeElement.getAttribute('data-utc');
                 const utcDate = new Date(utcTimeString);
-                const matchTimePlusOneHour = new Date(utcDate.getTime() + 60 * 120 * 1000); //set to 2 hours
+                const matchTimePlusOneHour = new Date(utcDate.getTime() + 60 * 240 * 1000); //set to 4 hours for now
 
                 // Check if the current time is more than an hour past the match time
                 if ((selectedRegions.includes("all") || matchRegion.includes("all") || selectedRegions.includes(matchRegion)) && currentTime <= matchTimePlusOneHour) {
